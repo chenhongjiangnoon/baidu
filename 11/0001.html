@@ -1,0 +1,201 @@
+<!doctype html>  <!-- 声明文档类型-->
+<html>
+<head>
+    <!--声明当前页面的编码集：charset=gbk,gb2312(中文编码),utf-8国际编码-->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <title>HTMl模板</title> 
+    <meta name="Keyword" content="关键词,关键词">
+    <meta name="description" content="描述">
+    <!--样式-->
+    <style type='text/css'>
+    *{margin:0; padding:0;}
+    ul{list-style:none;}
+    a{text-decoration:none;}
+    .fl{float:left;}
+    .fr{float:right;}
+    .clearfix:after{content:""; display:block; clear:both;}
+    .head{
+    	width: 700px;
+    	height:80px;
+    	border:1px solid red;
+    	margin:30px auto;
+
+    }
+    
+    .head .body1{
+    	height:80px;
+    	width: 200px;
+    	border:1px solid blue;
+    	/*float:left;*/
+    }
+    /*.head .body2{
+    	height:80px;
+    	width: 200px;
+    	
+    	border:1px solid blue;
+
+    	float:left;
+    }*/
+   
+    .head .body1 .son li{
+    	float:left;
+    }
+    .head .body1 ul li a{
+    	line-height: 73px;
+    	margin:0 73px;
+
+
+    }
+    /* .head .body2 ul li a{
+    	line-height: 73px;
+    	margin:0 73px;
+    }*/
+    .head .body1 .xia{
+    	margin:8px 0;
+    }
+	.head .body1 .xia ul li{
+		margin:-1px 0;
+		width: 200px;
+		height:48px;
+		border:1px  solid blue;
+	}
+	.head .body1 .xia ul li a{
+		line-height: 56px;
+		margin:0 69px;
+
+	}
+	.head .body1 .xia ul li:hover{
+		background: #00f3ff;
+	} 
+	.head .body1 .xia /*ul li*/{
+		/* display: none; */
+		overflow: hidden;
+		width: 203px;
+		height:0px;
+	}
+	.head .body1 ul li:hover .xia{
+		/* display: block; */
+		height:150px;
+		transition: 2s;
+	}
+	/*----------------------------------------------------------------------*/
+	/* .head .body2 .xia2 ul li a{
+		line-height: 48px;
+	}
+	.head .body2 .xia2{
+		margin:8px -1px;
+	}
+	.head .body2 .xia2 ul li{
+		margin:-1px 0;
+		width: 200px;
+		height:48px;
+		border:1px  solid blue;
+	}
+	.head .body2 .xia2 ul li{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.head .body2 .xia2{
+		display: none;
+	}
+	.head .body2 ul li:hover .xia2{
+		display:block;
+	}
+	.head .body2 .xia2 ul li:hover{
+		background: red;
+	} */
+
+    </style>
+</head> 
+<body>
+
+<!--
+	.body1>ul li{
+		
+	}
+
+
+-->
+
+    <div class="head">
+    		<div class="body1">
+    			<ul class="son">
+    				<li>
+    					<a href="##">商品</a>
+    					<div class="xia">
+    						<ul>
+    							<li><a href="##">电器</a></li>
+    							<li><a href="##">热水器</a></li>
+    							<li><a href="##">笔记本</a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    			<ul class="son">
+    				<li>
+    					<a href="##">服饰</a>
+    					<div class="xia">
+    						<ul>
+    							<li><a href="##"></a></li>
+    							<li><a href="##">361度</a></li>
+    							<li><a href="##">匹克</a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    			
+    		</div>
+    	</div>
+    		<!-- <div class="body1">
+    			<ul> -->
+    				<!-- <li>
+    					<a href="##">服饰</a>
+    					<div class="xia">
+    						<ul>
+    							<li><a href="##"></a></li>
+    							<li><a href="##">361度</a></li>
+    							<li><a href="##">匹克</a></li>
+    						</ul>
+    					</div>
+    				</li> -->
+    			<!-- </ul>
+    		</div>
+    
+    </div> -->
+   <!--   <div class="head">
+		<div class="body1">
+			<ul class="clearfix">
+				<li style="float: left;">
+					<a href="##">商品</a>
+					<div class="xia">
+						<ul>
+							<li><a href="##">电器</a></li>
+							<li><a href="##">热水器</a></li>
+							<li><a href="##">笔记本</a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li style="float: left;">
+					<a href="##">服饰</a>
+					<div class="xia">
+						<ul>
+							<li><a href="##"></a></li>
+							<li><a href="##">361度</a></li>
+							<li><a href="##">匹克</a></li>
+						</ul>
+					</div>
+				</li>
+
+
+
+
+			</ul>
+			
+		</div>
+
+    </div> -->
+    
+</body>	
+</html>

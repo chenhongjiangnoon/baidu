@@ -1,0 +1,275 @@
+<!doctype html>  <!-- 声明文档类型-->
+<html>
+	<head>
+	<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码),utf-8国际编码-->
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<title>HTMl模板</title> 
+	<meta name="Keyword" content="关键词,关键词">
+	<meta name="description" content="描述">
+	<!--样式-->
+	<style type='text/css'>
+	*{margin:0; padding:0;}
+	ul{list-style:none;}
+	a{text-decoration:none;}
+	.fl{float:left;}
+	.fr{float:right;}
+	.clearfix:after{content:""; display:block; clear:both;}
+	html{
+		width:100%;
+    	height:100%;
+	}
+    body{
+    	width:100%;
+    	height:100%;
+    	background:url("image/03.jpg")no-repeat center/cover;
+    }
+    .title{
+	    width:;
+		height:48px;
+		/*background:#b3b3b3;*/
+		border:1px solid transparent;
+	}
+	.title .left{
+		width:450px;
+		height: 48px;
+		/*border: 1px  solid  red;*/ 
+		line-height: 41px;
+		
+	}
+	.title .left a{
+		margin:0 20px; 
+		color:#ffffff;
+	}
+	.title .left a span{
+		margin-right:10px; 
+	}
+	.title .left span{
+		margin-left: 10px;
+	}
+	.title .left .zuo{
+		width: 235px;
+		height: 48px;
+		/*border:1px solid blue;*/
+		float: right;
+		margin:-42px 0;
+	}
+	.title .left .zuo a{
+		margin-left: -8px;
+	}
+	.title .right{
+		/*display: block;*/
+		width: 690px;
+		height: 48px;
+		/*border:1px solid yellow;*/
+		float: right;
+		margin: -52px 0;
+
+	}
+	.title .right ul{
+
+		float:left;
+		width:460px;
+	}
+	.title .right ul a span{
+		line-height: 45px;
+		margin:0 18px;
+		color:#ffffff;
+	}
+	.title .right .you{
+		float:right;
+		width: 160px;
+		height: 48px;
+		/*border:1px solid #ff00ff;*/
+		background: blue;
+	}
+	.title .right .you ul li a h3{
+         color:white;
+         line-height: 45px;
+         margin:0 42px;
+         font-weight: 400;
+	}
+	.body{
+		width: 476px;
+		height: 258px;
+		border:1px solid /*red*/ transparent;
+		margin:100px auto;
+	}
+	.body1{
+		/*border:1px solid blue;*/
+		position:relative;
+		height:130px;
+		width:940px;
+		margin:-176px auto;
+	}
+	.body1 input{
+		border:1px solid #b3b3b3;
+		margin:0 0 0 31px;
+		float:left;
+		width: 753px;
+		height: 48px;
+		font-size:18px;
+		
+	}
+	.body1 .body2{
+		/*border:1px solid red;*/
+		float:left;
+		width: 150px;
+		height: 45px;
+	}
+	.body1 .body2 button{
+ 		width: 150px;
+ 		height: 50px;
+ 		font:bold 16px/50px "";
+	}
+	.body1 .search{
+		position:absolute;
+		top:40px;
+		left:33px;
+		width:750px;
+		background:#fff;
+	}
+	.body1 .search ul li{
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		border:1px solid #eee;
+	}
+	.title .right .you .liebiao ul li{
+		width: 160px;
+		height:110px;
+		border:1px solid transparent;
+	}
+	.title .right .you .liebiao ul li img{
+		margin:5px 45px;
+	}
+	.title .right .you .liebiao ul li a{
+		display: block;
+		line-height: 21px;
+		margin:0 57px;
+		color:yellow;
+		white-space: nowrap;	
+	}
+	.title .right .you .liebiao ul li:hover{
+		background: #a3a3a3;
+
+	}
+	.title .right .you .liebiao{
+		display:none;
+	}
+	.title .right .you ul li:hover .liebiao{
+		display:block;
+	} 
+	</style>
+	</head> 
+
+
+	<body>
+	<!--mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm百度顶部mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm  -->
+	<div class="title">
+	    <!-- <img src="image/03.jpg" width=100% alt=""> -->
+		<div class="left">
+				<a href="##">
+					<span>石家庄:</span>
+					<img src="image/02.png" alt="">
+					<span>6℃ 良 63  |</span>
+				</a>
+			<div class="zuo">
+				<a href="##"><span>换肤</span></a>
+				<a href="##"><span>消息</span></a>
+				<a href="##"><span>显示频道</span></a>
+			</div>
+		</div>
+		<div class="right">
+				<ul>
+					<a href="##"><span>新闻</span></a>
+					<a href="##"><span>hao12</span></a> 
+					<a href="##"><span>地图</span></a> 
+					<a href="##"><span>视频</span></a> 
+					<a href="##"><span>贴吧</span></a>
+					<a href="##"><span>学术</span></a>   
+				</ul>
+			<div class="you">
+				<ul>
+					<li>
+					<a href=""><h3>更多产品</h3></a>
+						<div class="liebiao">
+							<ul>
+								<li><img src="image/03.png" width="50" height="50" alt=""><a href="">糯米</a></li>
+								<li><img src="image/music.png" width="50" height="50" alt=""><a href="">音乐</a></li>
+								<li><img src="image/03.png" width="50" height="50" alt=""><a href="">图片</a></li>
+								<li><img src="image/zhidao.png" width="50" height="50" alt=""><a href="">知道</a></li>
+								<li><img src="image/wenku.png" width="50" height="50" alt=""><a href="">文库</a></li>
+								<li><img src="image/tongji.png" width="50" height="50" alt=""><a href="">风云榜</a></li>
+								<li><img src="image/book.png" width="50" height="50" alt=""> <a href="">百度推广</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				
+			</div>	
+		</div>
+    </div>
+
+    <!-- mmmmmmmmmmmmmmmmmmmmmmmmm百度按钮mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+	<div class="body">
+		<a href="##"><img src="image/01.png" width="347" height="150" alt="百度"></a>
+	</div>	
+
+    <!-- mmmmmmmmmmmmmmmmmmmmmmmmm百度搜索框mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+	<div class="body1">
+			<input type="text" id="input">
+			<div class="body2">
+				<button>百度一下</button>
+			</div>
+			<div class="search">
+				<ul class="zzz">
+					<!-- <li>dfsdf </li>
+					<li>dfdsfd</li>
+					<li>fdfdsf</li>
+					<li>fsdfsd</li>
+					<li>fsdfsdf</li> -->
+				</ul>
+			</div>
+	</div>
+	
+
+	<script>
+	//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E9%A3%8E%E9%9B%A8&cb=abc
+	
+	
+		var input = document.getElementById("input"),
+			Ul = document.getElementsByClassName("zzz")[0];
+		
+
+		function abc(obj){
+			Ul.innerHTML = "";
+			console.log(obj.s)
+			var arr = obj.s;
+			for(var i in arr){
+				Ul.innerHTML += "<li>"+arr[i]+"</li>";
+			}	
+		}
+
+		input.oninput = function(){
+			var val = this.value;
+			var script = document.createElement("script");
+			script.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+val+"&cb=abc";
+			document.body.appendChild(script);
+		}
+
+		Ul.onclick = function(e){
+
+			var This = e.target || e.srcElement;
+			if(This.nodeName === "LI"){
+				
+				console.log(This.value)
+				window.open("https://www.baidu.com/s?wd="+This.innerHTML);	
+			}
+		}
+
+	</script>
+	</body>	
+
+</html>
+
+
